@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body id="registerForm">
+    <form id="form">
+        <p id="topText">Register</p>
+        <p id="warning"></p>
+        <div class="boxInput">
+            <label for="fullName">FullName</label>
+            <input type="text" class="fullName" placeholder="john doe">
+        </div>
+        <div class="boxInput">
+            <label for="username">Username</label>
+            <input type="text" class="userName" placeholder="john">
+        </div>
+        <div class="boxInput">
+            <label for="email">Email</label>
+            <input type="text" class="email" name="email" id="email" placeholder="john@example.com">
+        </div>
+        <div class="boxInput">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" class="phoneNumber" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div class="boxInput">
+            <label for="password">Password</label>
+            <input type="password" class="password" name="password" id="password">
+        </div>
+        <div class="boxInput">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="confirmPassword" name="confirmPassword" id="confirmPassword">
+        </div>
+        <input type="submit" value="REGISTER">
+        <p class="login">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

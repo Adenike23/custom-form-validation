@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+#topText {
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+#form{
+    background-color: white;
+}
+#warning{
+    color: red;
+}
+#registerForm{
+    background-color: lightgray;
+}
+.boxInput{
+    width: 95%;
+}
+form p{
+    margin-bottom: 1.5rem;
+}
+form div{
+    margin-bottom: 1.5rem;
+}
+form{
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1.5rem;
+}
+form label{
+    display: block;
+    padding-bottom: 8px;
+}
+input{
+    padding: 6px;
+    border-radius: 4px;
+    border-color: lightgray;
+    width: 100%;
+}
+input[type='submit']{
+    margin: 0 auto;
+    padding: 6px 10px;
+    width: 90%;
+    color: white;
+    font-size: 14px;
+    background-color: lightseagreen;
+}
+.login{
+    width: 18%;
+    margin: 15px auto;
+}
+::placeholder{
+    opacity: 0.3;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid lightseagreen;
+    border-bottom: 1px solid lightseagreen;
+}
+.logo{
+    font-size: 23px;
+    font-family: 'Chela One', cursive;
+    color: lightseagreen;
+}
+.navRight{
+    display: flex;
+    gap: 1rem;
+}
+nav button:nth-child(1), .mainText button{
+    background-color: lightseagreen;
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: 2px solid lightseagreen;
+    box-shadow: 0 3px 10px lightslategray;
+}
+nav button:nth-child(2){
+    border: 3px solid lightseagreen;
+    padding: 8px 12px;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px lightslategray;
+}
+nav button:nth-child(2):hover{
+    background-color: lightseagreen;
+    color: white;
+}
+button a{
+    all: unset;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 5rem 0; */
+    padding: 6rem 0;
+    background-color: lightgrey;
+}
+.mainText{
+    width: 40%;
+    
+}
+.mainText h3{
+    margin: 13px 0;
+    font-size: 16px;
+}
+main img{
+    width: 45%;
+    border-radius: 2px;
+}
