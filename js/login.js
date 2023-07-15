@@ -7,7 +7,7 @@ form.addEventListener('submit', function(e) {
     if (email.value.length <= 0 || password.value.length <= 0) {
         warning.textContent = 'Please fill all fields'
     } else if(password.value.length < 6) {
-        warning.textContent = 'Incorrect password'
+        warning.textContent = 'password must be at least 6 characters'
     } else{
         location.href = '/dashboard.html'
     }

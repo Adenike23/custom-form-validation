@@ -3,10 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Dashboard</title>
 </head>
-<body>
-    <h1>DASHBOARD</h1>
-    <p class="welcome"></p>
+<body id="dashboard">
+    <div class="dashboardNav">
+        <h1>Welcome back, </h1>
+        <button id="logout">Logout</button>
+    </div>
+    <article>
+        <div class="salesStat">
+            <p>Sales Stat</p>
+            <div>
+                <div class="firstStat">
+                    <h1>User Smile</h1>
+                    <i class="ri-user-smile-line" style="color: rgb(255, 183, 0);;"></i>
+                </div>
+                <div class="secondStat">
+                    <h2>Monthly Sales</h2>
+                    <i class="ri-funds-line" style="color: rgb(210, 23, 85);"></i>
+                </div>
+                <div class="thirdStat">
+                    <h3>Items Orders</h3>
+                    <i class="ri-price-tag-3-line" style="color: rgb(219, 41, 219);"></i>
+                </div>
+                <div class="fourthStat">
+                    <h4>Bug pages</h4>
+                    <i class="ri-pages-line" style="color: rgb(49, 208, 49);"></i>
+                </div>
+            </div>
+        </div>
+        <div class="dailyFeeds">
+            <p class="dailyFeedsText"> Daily Feed</p>
+            <div>
+                <img src="/images/Alex.webp" alt="">
+                <p>Alex Murphy reacted to your blog post</p>
+                <h5>7 min ago</h5>
+            </div>
+            <div>
+                <img src="/images/John.webp" alt="">
+                <p>John Doe reacted to your blog post</p>
+                <h5>10 hours ago</h5>
+            </div>
+            <div>
+                <img src="images/Monica.webp" alt="">
+                <p>Monica Smith is now engaged</p>
+                <h5>8 hours ago</h5>
+            </div>
+            <div>
+                <img src="/images/Elisha.webp" alt="">
+                <p>Elisha Scott is now engaged</p>
+                <h5>5 min ago</h5>
+            </div>
+            <button><a href="/">LOAD MORE</a></button>
+        </div>
+        <div class="appointments">
+            <p class="appointmentTop">Statistics</p>
+            <div id="features">
+                <div class="box">
+                    <i class="ri-shopping-cart-2-line" style="color: rgb(255, 183, 0);"></i>
+                    <div class="boxContent">
+                        <p>217</p>
+                        <h3>Sales Today</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-money-dollar-circle-line" style="color: rgb(210, 23, 85);"></i>
+                    <div class="boxContent">
+                        <p>109.783</p>
+                        <h3>Total Earnings</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-exchange-dollar-line" style="color: rgb(219, 41, 219);"></i>
+                    <div class="boxContent">
+                        <p>86.002</p>
+                        <h3>Total Revenue</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-shopping-cart-line" style="color: rgb(49, 208, 49);"></i>
+                    <div class="boxContent">
+                        <p>7</p>
+                        <h3>Pending Orders Today</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <table>
+        <caption>Latest Projects</caption>
+        <tr>
+            <th>Name</th>  <th>State date</th>  <th>End date</th> <th>Status</th>
+        </tr>
+        <tr>
+            <td>Tanzanite</td> <td>11/12/2009</td> <td>25/12/2010</td> <td>Done</td>
+        </tr>
+        <tr>
+            <td>Diamond</td> <td>22/12/2009</td> <td>25/11/2010</td> <td>Pending</td>
+        </tr>
+        <tr>
+            <td>Ruby</td> <td>11/12/2009</td> <td>20/12/2010</td> <td>Done</td>
+        </tr>
+        <tr>
+            <td>Sapphire</td> <td>8/12/2009</td> <td>17/12/2010</td> <td>Done</td>
+        </tr>
+    </table>
+    <footer>
+        <p class="logo">vikii</p>
+        <button id="backButton">Back to home</button>
+    </footer>  
+    <script src="/js/dashboared.js"></script>
 </body>
 </html>

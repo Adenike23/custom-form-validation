@@ -102,13 +102,11 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin: 5rem 0; */
     padding: 6rem 0;
     background-color: lightgrey;
 }
 .mainText{
     width: 40%;
-    
 }
 .mainText h3{
     margin: 13px 0;
@@ -117,4 +115,148 @@ main{
 main img{
     width: 45%;
     border-radius: 2px;
+}
+.dashboardNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.dashboardNav button{
+    background-color: lightseagreen;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid lightseagreen;
+    box-shadow: 0 3px 10px lightslategray;
+    color: white;
+    font-size: 14px;
+}
+#dashboard{
+    background-color: rgb(234, 232, 232);
+}
+#dashboard h1{
+    padding: 12px;
+}
+article{
+    display: grid;
+    grid-template-columns: 500px 400px auto;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+.salesStat{
+    background: linear-gradient(to bottom, lightseagreen, white);
+}
+.salesStat p{
+    margin-bottom: 10rem;
+    font-size: 23px;
+    padding: 1rem;
+    color: white;
+}
+.salesStat div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 1rem;
+}
+i{
+    font-size: 30px;
+}
+.firstStat{
+    display: flex;
+    background-color: darkgoldenrod;
+    padding-bottom: 5rem;
+    border-radius: 5px;
+}
+.secondStat{
+    background-color: palevioletred;
+    border-radius: 5px;
+}
+.thirdStat{
+    background-color: plum;
+    padding-bottom: 5rem;
+    border-radius: 5px;
+}
+.fourthStat{
+    background-color: darkgreen;
+    border-radius: 5px;
+}
+.appointments{
+    background: linear-gradient(to bottom, lightseagreen, white);
+    padding: 1rem;
+}
+.appointmentTop{
+    margin-bottom: 10rem;
+    font-size: 23px;
+    color: white;
+}
+.box{
+    display: flex;
+    gap: 1rem;
+    border: 2px solid white;
+    padding: 2rem 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+#features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.dailyFeeds{
+    background-color: white;
+}
+.dailyFeeds div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0 0 11px 11px;
+    border-bottom: 1px solid lightgrey;
+}
+.dailyFeedsText{
+    font-size: 22px;
+    padding: 1rem 0 10px 10px;
+    background-color: rgb(224, 217, 217);
+    border-bottom: 1px solid lightgray;
+}
+.dailyFeeds img{
+    width: 12%;
+    border-radius: 100px;
+}
+.dailyFeeds button{
+    background-color: lightseagreen;
+    width: 90%;
+    margin: 15px;
+    padding: 6px;
+}
+table{
+    background-color: white;
+    margin: 1rem 3rem;
+    width: 80%;
+}
+caption{
+    font-size: 20px;
+    margin: 1rem 0;
+}
+td{
+    padding: 15px 9rem;
+    border-bottom: 1px solid lightgrey;
+}
+th{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid lightgrey;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 10px 1rem;
+}
+footer button{
+    background-color: lightseagreen;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid lightseagreen;
+    box-shadow: 0 3px 10px lightslategray;
+    color: white;
+    font-size: 14px;
 }
