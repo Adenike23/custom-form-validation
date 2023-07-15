@@ -374,21 +374,27 @@ footer button{
     
 }
 @media screen and (max-width: 576px) {
+    #indexNav{
+        padding: 1.5rem 10px;
+    }
     main{
         flex-direction: column-reverse;
         align-items: center;
-        padding: 2rem;
+        padding: 3rem 0;
     }
     .dashboardNav{
         margin: 1.5rem 0;
     }
     .mainText{
-        width: 80%;
+        width: 90%;
         text-align: center;
+        margin-top:  3rem;
+    }
+    .mainText h3{
         margin: 2rem 0;
     }
     main img{
-        width: 80%;
+        width: 90%;
     }
     .login{
         width: 54%;
@@ -409,8 +415,11 @@ footer button{
     .boxContent h3{
         font-size: 18px;
     }
+    table{
+        padding: 10px;
+    }
     td{
-        padding: 15px 1.5rem;
+        padding: 15px 1.3rem;
     }
 }
 @media screen and (max-width: 480px) {
