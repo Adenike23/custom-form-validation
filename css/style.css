@@ -117,9 +117,6 @@ input[type='submit']{
     color: white;
     box-shadow: 0 5px 10px #1ac888;
 }
-button a{
-    /* all: unset; */
-}
 main{
     display: flex;
     justify-content: space-around;
@@ -151,7 +148,6 @@ main img{
     border-radius: 6px;
     font-size: 17px;
     background-color: #1ac888;
-    /* box-shadow: 0 3px 10px lightslategray; */
     color: white;
 }
 article{
@@ -212,15 +208,9 @@ i{
     color: white;
     margin: 0 1rem;
 }
-/* .appointmentTop{
-    margin-bottom: 10rem;
-    font-size: 23px;
-    color: white;
-} */
 .box{
     display: flex;
     gap: 4rem;
-    /* border: 2px solid white; */
     padding: 2rem;
     background-color: rgb(36, 34, 34);
     border-radius: 5px;
@@ -229,13 +219,14 @@ i{
 .boxContent a, .dailyFeeds button a{
     color: white
 }
+.box i{
+    display: flex;
+    align-items: center;
+}
 #features{
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem; */
 }
 .dailyFeeds{
     background-color: black;
@@ -364,15 +355,18 @@ footer button{
     .dailyFeeds div{
         gap: 1rem;
     }
-    .salesStat{
+    .salesStat p{
         margin-bottom: 5rem;
+    }
+    .salesStat{
+        margin-bottom: 3rem;
     }
     .box{
         gap: 10px;
         padding: 10px 5px;
     }
     table{
-        margin: 1.5rem;
+        margin: 1.1rem;
     }
     td{
         padding: 15px 3rem;
@@ -384,6 +378,9 @@ footer button{
         flex-direction: column-reverse;
         align-items: center;
         padding: 2rem;
+    }
+    .dashboardNav{
+        margin: 1.5rem 0;
     }
     .mainText{
         width: 80%;
