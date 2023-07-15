@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 html, body{
     overflow-x: hidden;
@@ -28,7 +29,8 @@ button{
     background-color: lightgray;
 }
 .boxInput{
-    width: 95%;
+    width: 50%;
+    margin: 0 auto;
 }
 form p{
     margin-bottom: 1.5rem;
@@ -53,18 +55,19 @@ input{
     padding: 6px;
     border-radius: 4px;
     border-color: lightgray;
-    width: 100%;
+    width: 60%;
+    margin-bottom: 1rem;
 }
 input[type='submit']{
     margin: 0 auto;
     padding: 6px 10px;
-    width: 90%;
+    width: 35%;
     color: white;
     font-size: 14px;
     background-color: lightseagreen;
 }
 .login{
-    width: 18%;
+    /* width: 18%; */
     margin: 15px auto;
 }
 ::placeholder{
@@ -165,7 +168,7 @@ article{
     padding: 1rem;
     color: white;
 }
-.salesStat div{
+.salesBox{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -174,7 +177,24 @@ article{
 i{
     font-size: 30px;
 }
-.firstStat{
+.salesBox div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    border-radius: 8px;
+    gap: 13px;
+    background-color: white;
+}
+.salesBox div i{
+    align-self: flex-end;
+    /* justify-self: flex-end; */
+}
+/* .firstStat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     border-radius: 10px;
@@ -198,13 +218,12 @@ i{
     border-radius: 10px;
     align-items: center;
     
-}
+} */
 .fourthStat h4, .thirdStat h3{
     font-size: 23px;
 }
 .appointments{
-    background-color: black;
-    padding: 1rem;
+    padding: 1rem 0;
     color: white;
     margin: 0 1rem;
 }
@@ -218,6 +237,10 @@ i{
 }
 .boxContent a, .dailyFeeds button a{
     color: white
+}
+.boxContent h6{
+    margin-top: 8px;
+    font-size: 12px;
 }
 .box i{
     display: flex;
@@ -253,13 +276,16 @@ i{
 }
 .dailyFeeds button{
     background-color: #1ac888;
-    margin: 2rem;
+    /* margin: 2rem; */
+    margin-right: auto;
     border-radius: 10px;
     padding: 6px 10px;
 }
 table{
     background-color: white;
     margin: 1rem 3rem;
+    width: 50%;
+    margin: 0 auto;
 }
 caption{
     font-size: 20px;
@@ -272,13 +298,14 @@ td{
     border-bottom: 1px solid lightgrey;
 }
 th{
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     border-bottom: 1px solid lightgrey;
 }
 footer{
     display: flex;
     justify-content: space-between;
     padding: 0 1rem 10px 1rem;
+    margin: 1.2rem 0;
 }
 footer button{
     all: unset;
@@ -294,24 +321,24 @@ footer button{
         width: 30%;
     }
     .box{
-        gap: 2rem;
+        gap: 3.5rem;
     }
     #features{
-        padding: 0 1rem;
+        padding: 0;
     }
     td{
-        padding: 15px 6.5rem;
+        padding: 15px 6rem;
     }
 }
 @media screen and (max-width:1125px) {
     .box{
-        gap: 1rem;
+        gap: 2rem;
     }
     .boxContent h3{
         font-size: 15px;
     }
     td{
-        padding: 15px 6rem;
+        padding: 15px 4.5rem;
     }
 }
 @media screen and (max-width: 992px) {
@@ -330,16 +357,14 @@ footer button{
     .fourthStat h4{
         font-size: 17px;
     }
-    #features{
-        padding: 0 1rem;
-    }
     .box{
-        gap: 2rem;
+        gap: 1.5rem;
         padding: 1rem;
     }
     td{
-        padding: 15px 4.5rem;
+        padding: 15px 3.5rem;
     }
+    
     
 }
 @media screen and (max-width:768px) {
@@ -361,17 +386,37 @@ footer button{
     .salesStat{
         margin-bottom: 3rem;
     }
-    .box{
+    #features{
         gap: 10px;
-        padding: 10px 5px;
+        padding: 0;
+    }
+    .box{
+        padding: 15px 10px;
+        gap: 10px;
     }
     table{
-        margin: 1.1rem;
+        margin: 0 auto;
     }
     td{
-        padding: 15px 3rem;
+        padding: 15px 2.8rem;
     }
     
+}
+@media screen and (max-width:600px) {
+    article{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        padding: 1rem;
+    }
+    #features{
+        gap: 6px;
+    }
+    table{
+        margin: 0 auto;
+    }
+    td{
+        padding: 15px 2.2rem;
+    }
 }
 @media screen and (max-width: 576px) {
     #indexNav{
@@ -404,11 +449,6 @@ footer button{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
     }
-    article{
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-        padding: 1rem;
-    }
     .box{
         gap: 2rem;
     }
@@ -420,6 +460,7 @@ footer button{
     }
     td{
         padding: 15px 1.3rem;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -427,6 +468,7 @@ footer button{
         width: 70%;
     }
     td{
-        padding: 15px 1rem;
+        padding: 15px 1.3rem;
+        font-size: 11px;
     }
 }
