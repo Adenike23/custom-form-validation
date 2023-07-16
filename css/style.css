@@ -67,7 +67,7 @@ input[type='submit']{
     background-color: lightseagreen;
 }
 .login{
-    /* width: 18%; */
+    width: 20%;
     margin: 15px auto;
 }
 ::placeholder{
@@ -152,6 +152,7 @@ main img{
     font-size: 17px;
     background-color: #1ac888;
     color: white;
+    cursor: pointer;
 }
 article{
     display: grid;
@@ -163,7 +164,7 @@ article{
     background-color: black;
 }
 .salesStat p{
-    margin-bottom: 15rem;
+    margin-bottom: 19rem;
     font-size: 23px;
     padding: 1rem;
     color: white;
@@ -240,7 +241,8 @@ i{
 }
 .boxContent h6{
     margin-top: 8px;
-    font-size: 12px;
+    font-size: 13px;
+    color: grey;
 }
 .box i{
     display: flex;
@@ -254,32 +256,47 @@ i{
 .dailyFeeds{
     background-color: black;
 }
-.dailyFeeds div{
+.dailyFeeds > div{
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin-top: 15px;
-    padding: 0 0 11px 11px;
-    border-bottom: 1px solid white;
+    padding: 1rem 14px;
+    border-top: 1px solid white;
     color: white;
+}
+.dailyFeeds p{
+    font-weight: 500;
+}
+.dailyFeeds h5{
+    margin-top: 13px;
+    font-weight: 300;
+    font-size: 12px;
+    color: grey;
 }
 .dailyFeedsText{
     font-size: 22px;
-    padding: 1rem 0 10px 10px;
+    padding: 1rem 0 5px 10px;
     background-color: black;
     color: white;
-    border-bottom: 1px solid lightgray;
+    margin-bottom: 1rem;
 }
 .dailyFeeds img{
     width: 10%;
     border-radius: 50px;
+    
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 .dailyFeeds button{
     background-color: #1ac888;
-    /* margin: 2rem; */
-    margin-right: auto;
+    margin: 1rem 1rem 0 1rem;
+    /* margin-right: auto; */
     border-radius: 10px;
-    padding: 6px 10px;
+    padding: 6px 13px;
+    font-size: 17px;
 }
 table{
     background-color: white;
@@ -315,6 +332,7 @@ footer button{
     box-shadow: 0 3px 10px lightslategray;
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 @media screen and (max-width:1326px) {
     .login{
@@ -351,6 +369,9 @@ footer button{
     .secondStat h2{
         font-size: 17px;
     }
+    .salesStat p{
+        margin-bottom: 14rem;
+    }
     .thirdStat h3{
         font-size: 17px;
     }
@@ -369,7 +390,7 @@ footer button{
 }
 @media screen and (max-width:768px) {
     .login{
-        width: 47%
+        width: 48%
     }
     article{
         grid-gap: 1rem;
@@ -381,7 +402,7 @@ footer button{
         gap: 1rem;
     }
     .salesStat p{
-        margin-bottom: 5rem;
+        margin-bottom: 8rem;
     }
     .salesStat{
         margin-bottom: 3rem;
@@ -414,6 +435,10 @@ footer button{
     #features{
         gap: 6px;
     }
+    .box{
+        gap: 0;
+        padding: 5px;
+    }
     table{
         margin: 0 auto;
     }
@@ -432,6 +457,9 @@ footer button{
     }
     .dashboardNav{
         margin: 1.5rem 0;
+    }
+    .dashboardNav button{
+        padding: 6px 12px;
     }
     .mainText{
         width: 90%;
@@ -468,7 +496,7 @@ footer button{
 }
 @media screen and (max-width: 480px) {
     .login{
-        width: 70%;
+        width: 71%;
     }
     td{
         padding: 15px 1.3rem;
