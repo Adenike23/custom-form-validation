@@ -392,6 +392,9 @@ footer button{
     
 }
 @media screen and (max-width:768px) {
+    #registerForm{
+        width: 65%;
+}
     article{
         grid-gap: 1rem;
     }
@@ -444,6 +447,9 @@ footer button{
     }
 }
 @media screen and (max-width: 576px) {
+    #registerForm{
+        width: 80%;
+}
     #indexNav{
         padding: 1.5rem 10px;
     }
