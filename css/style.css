@@ -20,12 +20,17 @@ button{
     font-family: 'Roboto Slab', serif;
     text-align: center;
     margin: 0 auto;
+    color: #1ac888;
+    font-weight: 600;
 }
 #form{
     background-color: white;
 }
 #warning{
     color: red;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 #registerForm{
     background-color: lightgray;
@@ -33,8 +38,14 @@ button{
     margin: 0 auto;
 }
 .boxInput{
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+small{
+    font-size: 10px;
+    color: rgb(176, 70, 70);
 }
 form p{
     margin-bottom: 1.5rem;
@@ -48,7 +59,8 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 1.5rem 0;
+    padding: 1.5rem;
+    width: 50%;
 }
 form label{
     display: block;
@@ -60,11 +72,10 @@ input{
     border-radius: 5px;
     border: 1px solid rgba(174, 174, 174, 0.368);
     width: 100%;
-    margin-bottom: 2rem;
     overflow: hidden;
 }
 input[type='submit']{
-    
+    cursor: pointer;
     border-radius: 2px;
     margin: 0 auto;
     padding: 6px 10px;
@@ -355,6 +366,9 @@ footer button{
     }
 }
 @media screen and (max-width:1125px) {
+    form{
+        width: 60%;
+    }
     .box{
         gap: 2rem;
     }
@@ -449,7 +463,10 @@ footer button{
 @media screen and (max-width: 576px) {
     #registerForm{
         width: 80%;
-}
+    }
+    form{
+        width: 70%;
+    }
     #indexNav{
         padding: 1.5rem 10px;
     }
@@ -498,5 +515,8 @@ footer button{
     td{
         padding: 15px 1.3rem;
         font-size: 11px;
+    }
+    form{
+        width: 90%;
     }
 }

@@ -6,7 +6,9 @@ const email = document.querySelector('.email');
 const phoneNumber = document.querySelector('.phoneNumber');
 const password = document.querySelector('.password');
 const confirmPassword = document.querySelector('.confirmPassword');
-const warning = document.querySelector('#warning')
+const warning = document.querySelector('#warning');
+const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+const passwordRegEx = /(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
 
 // all inputs must have contents in them
 
@@ -31,7 +33,13 @@ form.addEventListener('submit', function(e) {
             warning.textContent = 'password fields must match'
         } else if (!Number(phoneNumber.value)) {
             warning.textContent = 'phone number must be a number'
-        } else{
+        } else if (!emailRegEx.test(email.value)) {
+            warning.textContent = 'email must be a valid mail'
+        } else if(!passwordRegEx.test(password.value)) {
+            warning.textContent = 'password strength is poor'
+        }
+        else{
             location.href = '/dashboard.html'
         }
 })
+

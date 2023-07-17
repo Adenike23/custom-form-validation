@@ -1,4 +1,8 @@
-const backToHomeButton = document.querySelector('#backButton')
+const backToHomeButton = document.querySelector('#backButton');
+const userName = JSON.parse(localStorage.getItem('user'));
+if (userName) {
+    document.querySelector('.user').textContent = userName
+}
 backToHomeButton.addEventListener('click', function() {
     let answer = confirm ('Are you sure you want to go back to home?')
     if (answer === true) {
