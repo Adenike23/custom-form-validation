@@ -18,6 +18,8 @@ button{
 #topText {
     font-size: 20px;
     font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin: 0 auto;
 }
 #form{
     background-color: white;
@@ -27,6 +29,8 @@ button{
 }
 #registerForm{
     background-color: lightgray;
+    width: 50%;
+    margin: 0 auto;
 }
 .boxInput{
     width: 50%;
@@ -39,36 +43,40 @@ form div{
     margin-bottom: 1.5rem;
 }
 form{
-    width: 90%;
     margin: 4rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 form label{
     display: block;
     padding-bottom: 8px;
 }
 input{
+    all: unset;
     padding: 6px;
-    border-radius: 4px;
-    border-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid rgba(174, 174, 174, 0.368);
     width: 100%;
     margin-bottom: 2rem;
+    overflow: hidden;
 }
 input[type='submit']{
+    
+    border-radius: 2px;
     margin: 0 auto;
     padding: 6px 10px;
     width: 50%;
     color: white;
-    font-size: 14px;
+    text-align: center;
     background-color: lightseagreen;
 }
 .login{
-    width: 20%;
-    margin: 15px auto;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
 }
 ::placeholder{
     opacity: 0.3;
@@ -97,6 +105,7 @@ input[type='submit']{
     border: 2px solid #1ac888;
     box-shadow: 0 3px 10px lightslategray;
     color: white;
+    font-size: 16px;
 }
 #indexNav button:nth-child(1) a, .mainText button a{
     color: white;
@@ -292,8 +301,8 @@ i{
 }
 .dailyFeeds button{
     background-color: #1ac888;
+    border: 1px solid #1ac888;
     margin: 1rem 1rem 0 1rem;
-    /* margin-right: auto; */
     border-radius: 10px;
     padding: 6px 13px;
     font-size: 17px;
@@ -335,9 +344,6 @@ footer button{
     cursor: pointer;
 }
 @media screen and (max-width:1326px) {
-    .login{
-        width: 30%;
-    }
     .box{
         gap: 3.5rem;
     }
@@ -360,9 +366,6 @@ footer button{
     }
 }
 @media screen and (max-width: 992px) {
-    .login{
-        width: 37%;
-    }
     .firstStat h1{
         font-size: 18px;
     }
@@ -389,9 +392,6 @@ footer button{
     
 }
 @media screen and (max-width:768px) {
-    .login{
-        width: 48%
-    }
     article{
         grid-gap: 1rem;
     }
@@ -424,9 +424,6 @@ footer button{
     
 }
 @media screen and (max-width:600px) {
-    .login{
-        width: 51%;
-    }
     article{
         grid-template-columns: 1fr;
         grid-gap: 0;
@@ -472,9 +469,6 @@ footer button{
     main img{
         width: 90%;
     }
-    .login{
-        width: 60%;
-    }
     #features{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -495,9 +489,6 @@ footer button{
     }
 }
 @media screen and (max-width: 480px) {
-    .login{
-        width: 71%;
-    }
     td{
         padding: 15px 1.3rem;
         font-size: 11px;
