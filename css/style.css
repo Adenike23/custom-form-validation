@@ -243,9 +243,6 @@ i{
 .fourthStat h4, .thirdStat h3{
     font-size: 23px;
 }
-.firstStat h1:hover{
-    te
-}
 .appointments{
     padding: 1rem 0;
     color: white;
@@ -527,5 +524,34 @@ footer button{
     }
     form{
         width: 90%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .dashboardNav h1{
+        font-size: 17px;
+    }
+    .dashboardNav button{
+        font-size: 11px;
+    }
+    #features{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+    .box{
+        padding: 1rem;
+        gap: 4rem;
+    }
+    table{
+        padding: 0;
+    }
+    th{
+        font-size: 11px;
+    }
+    td{
+        padding: 15px 9px;
+        font-size: 11px;
+    }
+    footer button, .dailyFeeds button, .dashboardNav button{
+        font-size: 13px;
     }
 }
