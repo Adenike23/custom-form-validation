@@ -243,6 +243,9 @@ i{
 .fourthStat h4, .thirdStat h3{
     font-size: 23px;
 }
+.firstStat h1:hover{
+    te
+}
 .appointments{
     padding: 1rem 0;
     color: white;
@@ -478,6 +481,9 @@ footer button{
     .dashboardNav{
         margin: 1.5rem 0;
     }
+    .dashboardNav h1{
+        font-size: 25px;
+    }
     .dashboardNav button{
         padding: 6px 12px;
     }
@@ -512,6 +518,9 @@ footer button{
     }
 }
 @media screen and (max-width: 480px) {
+    .dashboardNav h1{
+        font-size: 21px;
+    }
     td{
         padding: 15px 1.3rem;
         font-size: 11px;
