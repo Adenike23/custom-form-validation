@@ -34,7 +34,8 @@ button{
 }
 #registerForm{
     background-color: lightgray;
-    width: 50%;
+    /* width: 50%; */
+    width: 25rem;
     margin: 0 auto;
 }
 .boxInput{
@@ -60,7 +61,7 @@ form{
     justify-content: center;
     align-items: start;
     padding: 1.5rem;
-    width: 50%;
+    /* width: 50%; */
 }
 form label{
     display: block;
@@ -367,7 +368,7 @@ footer button{
 }
 @media screen and (max-width:1125px) {
     form{
-        width: 60%;
+        /* width: 60%; */
     }
     .box{
         gap: 2rem;
@@ -407,7 +408,7 @@ footer button{
 }
 @media screen and (max-width:768px) {
     #registerForm{
-        width: 65%;
+        /* width: 65%; */
 }
     article{
         grid-gap: 1rem;
@@ -462,10 +463,10 @@ footer button{
 }
 @media screen and (max-width: 576px) {
     #registerForm{
-        width: 80%;
+        /* width: 80%; */
     }
     form{
-        width: 70%;
+        /* width: 70%; */
     }
     #indexNav{
         padding: 1.5rem 10px;
@@ -522,8 +523,11 @@ footer button{
         padding: 15px 1.3rem;
         font-size: 11px;
     }
-    form{
-        width: 90%;
+    #form{
+        width: 23rem;
+        /* width: 100%;
+        margin: auto; */
+        /* width: 90%; */
     }
 }
 @media screen and (max-width: 375px) {
