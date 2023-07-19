@@ -17,3 +17,9 @@ logoutButton.addEventListener('click', function() {
         location.href = '/login.html'
     }
 })
+
+
+// localStorage.setItem('items', 'item1 item2 item3');
+// localStorage.setItem('list', JSON.stringify({'item1':'bag', 'item2': 'cup', 'item3': 'shoe'}));
+// console.log(localStorage.getItem('items'));
+// console.log(JSON.parse(localStorage.getItem('list')).item1);

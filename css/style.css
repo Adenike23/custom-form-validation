@@ -34,12 +34,10 @@ button{
 }
 #registerForm{
     background-color: lightgray;
-    /* width: 50%; */
     width: 25rem;
     margin: 0 auto;
 }
 .boxInput{
-    /* width: 50%; */
     margin: 0 auto;
     width: 100%;
     margin-bottom: 2rem;
@@ -61,7 +59,6 @@ form{
     justify-content: center;
     align-items: start;
     padding: 1.5rem;
-    /* width: 50%; */
 }
 form label{
     display: block;
@@ -270,9 +267,9 @@ i{
     align-items: center;
 }
 #features{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
 }
 .dailyFeeds{
     background-color: black;
@@ -304,7 +301,6 @@ i{
 .dailyFeeds img{
     width: 10%;
     border-radius: 50px;
-    
 }
 .button{
     display: flex;
@@ -357,7 +353,8 @@ footer button{
 }
 @media screen and (max-width:1326px) {
     .box{
-        gap: 3.5rem;
+        gap: 2rem;
+        padding: 1.5rem;
     }
     #features{
         padding: 0;
@@ -367,11 +364,8 @@ footer button{
     }
 }
 @media screen and (max-width:1125px) {
-    form{
-        /* width: 60%; */
-    }
     .box{
-        gap: 2rem;
+        gap: 1rem;
     }
     .boxContent h3{
         font-size: 15px;
@@ -396,6 +390,9 @@ footer button{
     .fourthStat h4{
         font-size: 17px;
     }
+    #features{
+        gap: 2rem;
+    }
     .box{
         gap: 1.5rem;
         padding: 1rem;
@@ -407,9 +404,6 @@ footer button{
     
 }
 @media screen and (max-width:768px) {
-    #registerForm{
-        /* width: 65%; */
-}
     article{
         grid-gap: 1rem;
     }
@@ -427,7 +421,6 @@ footer button{
     }
     #features{
         gap: 10px;
-        padding: 0;
     }
     .box{
         padding: 15px 10px;
@@ -451,7 +444,7 @@ footer button{
         gap: 6px;
     }
     .box{
-        gap: 0;
+        gap: 2px;
         padding: 5px;
     }
     table{
@@ -462,12 +455,6 @@ footer button{
     }
 }
 @media screen and (max-width: 576px) {
-    #registerForm{
-        /* width: 80%; */
-    }
-    form{
-        /* width: 70%; */
-    }
     #indexNav{
         padding: 1.5rem 10px;
     }
@@ -497,12 +484,12 @@ footer button{
         width: 90%;
     }
     #features{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
     }
     .box{
         gap: 2rem;
+        padding: 1rem 10px;
     }
     .boxContent h3{
         font-size: 18px;
@@ -525,9 +512,6 @@ footer button{
     }
     #form{
         width: 20rem;
-        /* width: 100%;
-        margin: auto; */
-        /* width: 90%; */
     }
 }
 @media screen and (max-width: 375px) {
