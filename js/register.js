@@ -39,6 +39,7 @@ form.addEventListener('submit', function(e) {
             warning.textContent = 'password strength is poor'
         }
         else{
+            localStorage.setItem('user', JSON.stringify(userName.value))
             location.href = '/dashboard.html'
         }
 })
