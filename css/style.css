@@ -163,17 +163,17 @@ main img{
 }
 .count{
     display: flex;
-    gap: 1rem;
+    gap: .7rem;
     align-items: center;
     justify-content: center;
     margin: 0 12px;
 }
 .users{
     background-color: rgb(164, 164, 164);
-    padding: 2rem .5rem;
+    padding: 2rem 1rem;
     border-radius: 6px;
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
 }
 .users i{
@@ -535,7 +535,7 @@ footer h5{
     main{
         flex-direction: column-reverse;
         align-items: center;
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
     main img{
         width: 80%;
