@@ -125,6 +125,10 @@ input[type='submit']{
 .mainText button{
     margin-bottom: 4rem;
 }
+.mainText button:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
 #indexNav button:nth-child(2){
     all: unset;
     border: 3px solid #1ac888;
@@ -244,36 +248,7 @@ i{
 }
 .salesBox div i{
     align-self: flex-end;
-    /* justify-self: flex-end; */
 }
-/* .firstStat{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-}
-.firstStat i{
-    display: block;
-}
-.secondStat{
-    background-color: white;
-    border-radius: 10px;
-    align-items: center;
-}
-.thirdStat{
-    background-color: white;
-    padding-bottom: 5rem;
-    border-radius: 10px;
-    align-items: center;
-}
-.fourthStat{
-    background-color: white;
-    border-radius: 10px;
-    align-items: center;
-    
-} */
 .fourthStat h4, .thirdStat h3{
     font-size: 23px;
 }
@@ -656,6 +631,12 @@ footer h5{
     }
     #form{
         width: 20rem;
+    }
+    .users:nth-of-type(2){
+        width: 45%;
+    }
+    .users:nth-of-type(3){
+        display: none;
     }
 }
 @media screen and (max-width: 375px) {
